@@ -50,6 +50,12 @@ const Trash2 = (props) => (
 
 
 // --- Firebase Configuration ---
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyC4ivOi7TL5F3Tp23y1XmmZJuRVcMdosw0",
   authDomain: "beach-dinner-signup.firebaseapp.com",
