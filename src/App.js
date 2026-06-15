@@ -65,13 +65,13 @@ const App = () => {
     useEffect(() => {
         try {
             const firebaseConfig = {
-  apiKey: "AIzaSyC4ivOi7TL5F3Tp23y1XmmZJuRVcMdosw0",
-  authDomain: "beach-dinner-signup.firebaseapp.com",
-  projectId: "beach-dinner-signup",
-  storageBucket: "beach-dinner-signup.firebasestorage.app",
-  messagingSenderId: "47314255862",
-  appId: "1:47314255862:web:1954797f2680e77fcd91d7"
-};
+              apiKey: "AIzaSyC4ivOi7TL5F3Tp23y1XmmZJuRVcMdosw0",
+              authDomain: "beach-dinner-signup.firebaseapp.com",
+              projectId: "beach-dinner-signup",
+              storageBucket: "beach-dinner-signup.firebasestorage.app",
+              messagingSenderId: "47314255862",
+              appId: "1:47314255862:web:1954797f2680e77fcd91d7"
+            };
             
             if (!firebaseConfig.apiKey || firebaseConfig.apiKey === "YOUR_API_KEY") {
                 setError("Firebase is not configured. Please add your API keys to the code.");
@@ -119,15 +119,15 @@ const App = () => {
 
         const scheduleCollectionRef = collection(db, 'artifacts', appId, 'public', 'data', 'schedule');
         
+        // Updated for July 25th - July 31st, 2026
         const initialDates = [
-            { id: '2025-08-02', date: 'August 2', day: 'Saturday' },
-            { id: '2025-08-03', date: 'August 3', day: 'Sunday' },
-            { id: '2025-08-04', date: 'August 4', day: 'Monday' },
-            { id: '2025-08-05', date: 'August 5', day: 'Tuesday' },
-            { id: '2025-08-06', date: 'August 6', day: 'Wednesday' },
-            { id: '2025-08-07', date: 'August 7', day: 'Thursday' },
-            { id: '2025-08-08', date: 'August 8', day: 'Friday' },
-            { id: '2025-08-09', date: 'August 9', day: 'Saturday' },
+            { id: '2026-07-25', date: 'July 25', day: 'Saturday' },
+            { id: '2026-07-26', date: 'July 26', day: 'Sunday' },
+            { id: '2026-07-27', date: 'July 27', day: 'Monday' },
+            { id: '2026-07-28', date: 'July 28', day: 'Tuesday' },
+            { id: '2026-07-29', date: 'July 29', day: 'Wednesday' },
+            { id: '2026-07-30', date: 'July 30', day: 'Thursday' },
+            { id: '2026-07-31', date: 'July 31', day: 'Friday' },
         ];
 
         const unsubscribe = onSnapshot(scheduleCollectionRef, (snapshot) => {
@@ -217,8 +217,9 @@ const App = () => {
                            <Sun className="h-12 w-12 text-white"/>
                         </div>
                     </div>
-                    <h1 className="text-5xl sm:text-6xl font-bold text-cyan-900 mt-4">2025 Family Beach Trip!</h1>
-                    <p className="text-lg text-cyan-800 mt-2">Dinner Schedule: Aug 2nd - 9th, 2025</p>
+                    {/* Updated header for 2026 */}
+                    <h1 className="text-5xl sm:text-6xl font-bold text-cyan-900 mt-4">2026 Family Beach Trip!</h1>
+                    <p className="text-lg text-cyan-800 mt-2">Dinner Schedule: July 25th - 31st, 2026</p>
                     <p className="text-xl text-orange-600 font-semibold mt-4">Pick a night to be the chef!</p>
                 </header>
                 <div className="space-y-5">
